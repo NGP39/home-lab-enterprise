@@ -23,7 +23,7 @@ Przygotowanie do konkursu  na stanowisko Administratora Systemu Informatycznego 
 - VMware vSphere 8 z pełnym vCenter (vDS + live vMotion + iSCSI)
 - Active Directory – dwa kontrolery domeny z replikacją FSMO i SYSVOL
 - Klient Windows 10 przyłączony do domeny
-- Wszystkie elementy uruchomione na VMware Workstation Pro 15H2 (64 GB RAM, Xeon E5-2683 v4)
+- Wszystkie elementy uruchomione na VMware Workstation Pro 25H2 (64 GB RAM, Xeon E5-2683 v4)
 
 Repozytorium będzie rozwijane do 15.12.2025 – kolejne elementy (Hyper-V, AlmaLinux, Zabbix, przykłady incydentów i napraw) pojawią się w najbliższych dniach.
 
