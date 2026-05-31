@@ -77,9 +77,10 @@ MECM installed from ISO using `splash.hta`:
 **Issue:** `NT SERVICE\MSSQLSERVER` account rejected during prerequisite check.  
 **Fix:** Changed SQL service account to `Network Service` in SQL Server Configuration Manager.
 
-📷 *Screenshot: MECM installation wizard — completed successfully*
+![MECM — installation completed successfully](screenshots/Installation-success.png)
 
-📷 *Screenshot: MECM console — Administration workspace with site configuration*
+![MECM — Administration, site configuration](screenshots/MECM-Sites-Config.png)
+
 
 ---
 
@@ -95,7 +96,7 @@ MECM installed from ISO using `splash.hta`:
 - Linked to SCCM.Homelab.local as site system server
 - "Use this boundary group for site assignment" ✅
 
-📷 *Screenshot: Boundary Groups — BG_Homelab with site system and boundary assigned*
+![MECM — BG_Homelab boundary group](screenshots/MECM-boundry-groups.png)
 
 ---
 
@@ -112,7 +113,7 @@ Three discovery methods enabled:
 All configured with path: `LDAP://DC=Homelab,DC=local` (recursive search).  
 Full Discovery triggered immediately after configuration.
 
-📷 *Screenshot: Assets and Compliance → Devices showing discovered machines*
+![MECM — discovered devices](screenshots/MECM-device-showing.png)
 
 ---
 
@@ -126,7 +127,7 @@ Client Push failed silently on all targets. Resolved by installing the agent man
 \\SCCM.Homelab.local\SMS_LAB\Client\ccmsetup.exe /mp:SCCM.Homelab.local SMSSITECODE=LAB
 ```
 
-📷 *Screenshot: Assets and Compliance → Devices showing all 4 clients with MECM agent (Client = Yes)*
+![MECM — all 4 clients with agent installed](screenshots/MECM-device-showing.png)
 
 ---
 
@@ -139,7 +140,9 @@ Client Push failed silently on all targets. Resolved by installing the agent man
 
 > Query Rules were attempted first using WQL (`SMS_R_System.OperatingSystemNameandVersion like "%Windows 11%"`), but machines did not appear in collections until inventory completed. Switched to Direct Rules for reliable results.
 
-📷 *Screenshot: Device Collections showing MECM-Pilot and MECM-Production with member counts*
+![MECM — Pilot and Production collections](screenshots/MECM-groups.png)
+
+![MECM — Direct Membership Rules](screenshots/MECM-Members-rules.png)
 
 ---
 
@@ -183,7 +186,7 @@ Setting new configuration state to 2 (WSUS_CONFIG_SUCCESS)
 ```
 ✅
 
-📷 *Screenshot: Software Library → All Software Updates showing synchronized updates*
+![MECM — All Software Updates synchronized](screenshots/MECM-all-Software_updates.png)
 
 ---
 
@@ -204,9 +207,8 @@ New-Item -Path "C:\Sources\Updates\Production" -ItemType Directory -Force
 New-SmbShare -Name "Sources" -Path "C:\Sources" -FullAccess "Everyone"
 ```
 
-📷 *Screenshot: Monitoring → Deployments showing DEP_Production_2026_05 with status*
+![MECM — Deployments overview](screenshots/MECM-deployments-overview.png)
 
-📷 *Screenshot: Monitoring → Distribution Status → Content Status showing update download progress*
 
 ---
 
@@ -228,11 +230,11 @@ Deployed with:
 - Purpose: **Required**
 - Distribution Point: `\\SCCM.Homelab.local`
 
-📷 *Screenshot: Software Library → Applications showing 7-Zip*
+![MECM — 7-Zip application](screenshots/7zip-application-showing.png)
 
-📷 *Screenshot: Software Center on WIN11HR1 showing 7-Zip available or installed*
+![Software Center on WIN11HR1 — 7-Zip available](screenshots/Win11-7zip-available.png)
 
-📷 *Screenshot: Monitoring → Deployments showing 7-Zip deployment status on Pilot collection*
+![Monitoring — 7-Zip deployment status](screenshots/Monitoring-7zip-showing.png)
 
 ---
 
