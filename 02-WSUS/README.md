@@ -31,7 +31,7 @@ The WSUS setup demonstrates a realistic **deployment ring strategy** — updates
 
 > ⚠️ "Upgrades" and "Microsoft Security Essentials" were intentionally excluded after troubleshooting performance issues (see below).
 
-📷 *Screenshot: WSUS console showing synchronization status and product/classification settings*
+![WSUS — product and classification settings](screenshots/WSUS-synchronization.png)
 
 ---
 
@@ -64,7 +64,7 @@ Start-Service -Name wsusservice
 
 **Result:** WSUS completed full synchronization within ~1 hour. ✅
 
-📷 *Screenshot: WSUS console showing successful synchronization with update count*
+![WSUS — successful synchronization](screenshots/WSUS-OK-sync.png)
 
 ---
 
@@ -97,9 +97,11 @@ Both GPOs configured under:
 | No auto-restart with logged on users | Enabled |
 | Enable client-side targeting | `WSUS - Pilot` / `WSUS - Production` |
 
-📷 *Screenshot: WSUS console showing WSUS-Pilot and WSUS-Production groups with assigned computers*
+![WSUS — Pilot and Production groups with assigned computers](screenshots/WSUS-groups_assigned.png)
 
-📷 *Screenshot: GPO settings for WSUS (Specify intranet update service location + client-side targeting)*
+![WSUS GPO — intranet update service location](screenshots/WSUS-GPO.png)
+
+![WSUS GPO — client-side targeting](screenshots/WSUS-GPO-2.png)
 
 ---
 
@@ -118,4 +120,4 @@ gpupdate /force
 gpresult /r /scope computer
 ```
 
-📷 *Screenshot: Windows Update on WIN11HR2 showing an approved patch ready to install*
+![Windows 11 — approved patch ready to install](screenshots/W11-patching.png)
