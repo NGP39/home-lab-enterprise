@@ -23,7 +23,7 @@ A fully functional enterprise-grade homelab built on VMware Workstation Pro, des
 
 > All VMs run on **VMware Workstation Pro** on a single physical host.
 
-<img width="1916" height="1151" alt="image" src="https://github.com/user-attachments/assets/ba377a75-4dac-487b-b502-0da977f08f66" />
+📷 *Screenshot suggestion: VMware Workstation Pro showing all VMs running — a great opener that shows the scope of the lab at a glance.*
 
 ---
 
