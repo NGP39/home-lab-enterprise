@@ -58,8 +58,8 @@ ExecuteSPImportUpdate caught a deadlock SqlException
 
 ```powershell
 iisreset /stop
-net start w3svc
-net start wsusservice
+Start-Service -Name w3svc
+Start-Service -Name wsusservice
 ```
 
 **Result:** WSUS completed full synchronization within ~1 hour. ✅
