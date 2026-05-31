@@ -35,7 +35,7 @@ homelab.local
 └── OU=HomeLab-ServiceAccounts
 ```
 
-📷 *Screenshot: Active Directory Users and Computers showing the full OU tree*
+![ADUC — full OU tree](screenshots/ADUC-full-OU-tree.png)
 
 ---
 
@@ -82,9 +82,9 @@ Inbound firewall rules created:
 | MECM-RPC-Dynamic | TCP | 49152–65535 | Dynamic RPC |
 | MECM-ICMP | ICMPv4 | — | Ping (connectivity testing) |
 
-📷 *Screenshot: Group Policy Management showing GPO_MECM_Firewall linked to homelab.local*
+![GPO_MECM_Firewall linked to homelab.local](screenshots/GPO-MECM-Firewall.png)
 
-📷 *Screenshot: Firewall inbound rules inside the GPO editor*
+![Firewall inbound rules in GPO editor](screenshots/Firewall-inbound-GPO-editor.png)
 
 ### GPO: GPO_WSUS_Pilot + GPO_WSUS_Production
 Linked to their respective Workstations OUs — see the [WSUS section](../02-WSUS/README.md) for full details.
