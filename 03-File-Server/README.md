@@ -70,9 +70,9 @@ Each share follows the same permission model. Here's the example for `\\FILESERV
 
 The same model applies to `\\FILESERVER\IT`, `\\FILESERVER\Management`, and `\\FILESERVER\Public`, with the corresponding `GG_*_RW` group assigned.
 
-📷 *Screenshot: File Server — Explorer view showing E:\Shares with all 4 subfolders*
+![File Server — E:\Shares subfolders](screenshots/Share-subfolders.png)
 
-📷 *Screenshot: NTFS security tab for the HR folder showing group permissions*
+![HR folder — NTFS Security tab](screenshots/HR-Security-tab.png)
 
 ---
 
