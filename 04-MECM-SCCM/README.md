@@ -74,7 +74,7 @@ MECM installed from ISO using `splash.hta`:
 **Issue:** SQL Express (initial choice) is not supported by MECM.  
 **Fix:** Rolled back via VM snapshot, reinstalled with SQL Server 2022 Developer Edition.
 
-![VM Snapshot](screenshots/vmsnapshot.png)
+![VM Snapshot](screenshots/vmsnapshoot.png)
 
 **Issue:** `NT SERVICE\MSSQLSERVER` account rejected during prerequisite check.  
 **Fix:** Changed SQL service account to `Network Service` in SQL Server Configuration Manager.
