@@ -29,5 +29,5 @@ Cockpit web console available at: `https://192.168.5.186:9090`
 - [ ] Service status reporting (WSUS, MECM agent)
 - [ ] Basic AD user provisioning
 
-📷 *Screenshot: Cockpit web console showing Ansible server joined to homelab.local*
+![Ansible server joined to homelab.local](screenshots/domain-join.png)
 
